@@ -16,3 +16,11 @@ var productListingTemplate = _.template(
     "</div>"+
   "</div>"
 );
+
+var insertProductListingTemplate = function() {
+
+  etsyItems.forEach(function(item) {
+    $(".product-listing").append(myTemplate(item));
+  });
+
+}
