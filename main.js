@@ -20,7 +20,7 @@ var productListingTemplate = _.template(
 var insertProductListingTemplate = function() {
 
   items.forEach(function(item) {
-    $(".product-listing").append(myTemplate(item));
+    $(".product-listing").append(productListingTemplate(item));
   });
 
 };
