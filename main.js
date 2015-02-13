@@ -55,12 +55,12 @@ $(function() {
     var keywords = $(".search-field").val();
     $(".product-listings").empty();
     getData(keywords, handleEtsyData); 
-    $(".show-keyword").text(keywords);
-    $("title").empty().text("Etsy Iron Yard Clone | Search - " + keywords);
-
+    $(".keyword-results").html("<h4>&ldquo;" + keywords + "&rdquo;</h4>" + " We found " + " items!");
+    
   });
 
   getData(handleEtsyData);
+
 });
 
 
