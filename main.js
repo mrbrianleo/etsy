@@ -3,13 +3,13 @@ var productListingTemplate = _.template(
     "<div class='product-wrapper'>" +
       "<div class='product-image-wrapper'>" +
         "<div class='product-image'>" +
-          "<img src='<%= Images[0].url_fullxfull %>'>" +
+          "<img src='<%= Images[0].url_570xN %>' alt='<%= title %>'>" +
         "</div>" +
       "</div>" +
       "<div class='product-info'>" +
         "<div class='product-title'><a href='<%= url %>'><%= title %></a></div>" +
         "<div class='product-details'>" +
-          "<div class='product-seller'><a href='<% Shop.url %>'><%= Shop.shop_name %></a></div>" +
+          "<div class='product-seller'><a href='<%= Shop.url %>'><%= Shop.shop_name %></a></div>" +
           "<div class='product-price'>$<%= price %> <%= currency_code %></div>" +
         "</div>" +
       "</div>" +
@@ -54,7 +54,10 @@ $(function() {
     event.preventDefault();
     var keywords = $(".search-field").val();
     $(".product-listings").empty();
-    getData(keywords, handleEtsyData);    
+    getData(keywords, handleEtsyData); 
+    $(".show-keyword").text(keywords);
+    $("title").empty().text("Etsy Iron Yard Clone | Search - " + keywords);
+
   });
 
   getData(handleEtsyData);

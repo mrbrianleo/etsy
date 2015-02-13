@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Etsy Clone</title>
+    <title>Etsy Iron Yard Clone | Search</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="shortcut icon" href="https://www.etsy.com/images/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="main.js"></script>
@@ -38,8 +39,11 @@
         </div>
       </div>
       <div class="right">
-        <div class="right-header">"keyword" we found xx,xxx items!
-          <div class="sort">Sort by: <a href="#">Dropdown menu</a></div>
+        <div class="right-header">
+          <div class="right-header-container">
+            <h4>&ldquo;<span class="show-keyword"></span>&rdquo;</h4><span>We found <span class="num-results"></span> items!</span>
+            <div class="sort">Sort by: <a href="#">Dropdown menu</a></div>
+          </div>
         </div>
         <div class="product-listings"></div>
         <div class="right-related">RELATED SEARCHES HERE</div>
