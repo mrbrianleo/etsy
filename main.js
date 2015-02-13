@@ -17,10 +17,48 @@ var productListingTemplate = _.template(
   "</div>"
 );
 
-var insertProductListingTemplate = function() {
+var getData = function(keywords, callback) {
+  var params = {
+    api_key: "niqoyrl7dver15xzb6mp2c7e",
+    includes: "Images,Shop"
+  };
 
+  if (!callback && typeof keywords === "function") {
+    callback = keywords;
+    keywords = null;
+  }
+
+  if (keywords && keywords.length) {
+    params.keywords = keywords;
+  }
+
+  $.ajax("https://openapi.etsy.com/v2/listings/active.js", {
+    data: params,
+    dataType: "jsonp",
+    success: callback
+  });
+};
+
+var insertProductListingTemplate = function(items) {
   items.forEach(function(item) {
     $(".product-listings").append(productListingTemplate(item));
   });
-
 };
+
+var handleEtsyData = function(data) {
+  insertProductListingTemplate(data.results);
+};
+
+$(function() {
+  $(".search-form").on("submit", function(event) {  
+    event.preventDefault();
+    var keywords = $(".search-field").val();
+    $(".product-listings").empty();
+    getData(keywords, handleEtsyData);    
+  });
+
+  getData(handleEtsyData);
+});
+
+
+

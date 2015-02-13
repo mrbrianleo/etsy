@@ -1,15 +1,45 @@
-html {
+body {
   font-size: 12px;
   background-color: #f5f5f1;
+  font-family: arial,helvetica,sans-serif;
+  color: #666;
 }
 
 /* PAGE LAYOUT */
 
+h4 {
+  margin: 0 0 4px 0;
+}
+
+.search-form {
+  margin-top: -10px;
+}
+
+.search-field {
+  line-height: 30px;
+  padding-left: 10px;
+  min-width: 250px;
+  border-radius: 3px;
+  border: 2px solid #ececec;
+}
+
+.search-button {
+  line-height: 30px;
+  border: none;
+}
+
+.header {
+  height: 80px;
+  background-color: #fff;
+  margin: 0;
+  border: 1px solid #ececec;
+}
+
 .header-content {
   width: 78%;
   margin: 10px auto;
-  border 1px solid red;
-  background-color: blue;
+/*  border 1px solid red;
+  background-color: blue;*/
   height: 40px;
   padding: 10px 0;
 }
@@ -25,7 +55,7 @@ html {
 
 .content {
   width: 82%;
-  margin: auto;
+  margin: 10px auto;
   border: 2px solid blue;
   overflow: hidden;
 }
@@ -35,12 +65,34 @@ html {
   width: 225px;
   height: 500px;
   margin-left: 24px;
-  border: 1px solid red;
 }
 
 .filter-header {
   height: 40px;
-  border: 1px solid green;
+}
+
+.filter-header h4 {
+  padding-top: 15px;
+}
+
+.filter-wrapper {
+  border: 1px solid #ececec;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.filter-box {
+  border-bottom: 1px solid #ececec;
+  padding: 10px 0;
+}
+
+.filter-box:first-child {
+  padding-top: 0;
+}
+
+.filter-box:last-child {
+  border-bottom: none;
 }
 
 .right {
@@ -99,6 +151,11 @@ html {
   overflow: hidden;
 }
 
+.footer-container h4 {
+  color: #333;
+  font-weight: normal;
+}
+
 .footer-col {
   border: 1px solid red;
   width: 17%;
@@ -107,10 +164,7 @@ html {
   float: left;
 }
 
-.header {
-  border: 1px solid green;
-  height: 80px;
-}
+
 
 /* END PAGE LAYOUT*/
 
