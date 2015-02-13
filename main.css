@@ -150,7 +150,6 @@ h4 {
   margin: 0 auto;
   height: 200px;
   clear: both;
-  border: 1px solid red;
 }
 
 .footer {
@@ -160,7 +159,6 @@ h4 {
 .footer-container {
   width: 100%;
   margin: 0 auto;
-  border: 1px solid blue;
   overflow: hidden;
 }
 
@@ -170,7 +168,6 @@ h4 {
 }
 
 .footer-col {
-  border: 1px solid red;
   width: 17%;
   margin: 0 0 0 23px;
   height: 180px;
@@ -218,9 +215,15 @@ h4 {
 }
 
 .product-image img {
-  position: absolute;
+  /*position: absolute;
   width: 214px;
-  top: -25px;
+  top: -25px;*/
+  display: block;
+  max-width:214px;
+  max-height: 170px;
+  width: auto;
+  height: 170px;
+  margin: 0 auto 0 auto;
 }
 
 .product-info a {
