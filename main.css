@@ -7,6 +7,16 @@ body {
 
 /* PAGE LAYOUT */
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+}
+
 h4 {
   margin: 0 0 4px 0;
   font-size: 13px;
@@ -16,17 +26,31 @@ h4 {
   margin-top: -10px;
 }
 
+textarea, input { 
+  box-shadow: none;
+}
+
 .search-field {
-  line-height: 30px;
-  padding-left: 10px;
+  line-height: 34px;
+  padding: 0 10px;
   min-width: 250px;
   border-radius: 3px;
-  border: 2px solid #ececec;
+  border: 1px solid #ececec;
+  -webkit-appearance: none; 
+}
+
+.search-field:active {
+  border: 1px solid #4ca0ba;
 }
 
 .search-button {
   line-height: 30px;
-  border: none;
+  border: 1px solid #4ca0ba;
+  margin-left: -7px;
+  padding-bottom: 2px;
+  color: #fff;
+  background-color: #54acc7;
+  border-radius: 0 3px 3px 0;
 }
 
 .header {
@@ -37,7 +61,7 @@ h4 {
 }
 
 .header-content {
-  width: 78%;
+  width: 980px;
   margin: 10px auto;
 /*  border 1px solid red;
   background-color: blue;*/
@@ -55,7 +79,7 @@ h4 {
 }
 
 .content {
-  width: 82%;
+  width: 980px;
   margin: 10px auto;
 /*  border: 2px solid blue;
 */  overflow: hidden;
@@ -63,9 +87,8 @@ h4 {
 
 .filters {
   float: left;
-  width: 225px;
-  height: 500px;
-  margin-left: 24px;
+  width: 224px;
+  height: auto;
 }
 
 .filter-header {
@@ -96,9 +119,17 @@ h4 {
   border-bottom: none;
 }
 
+.filter-color ul, li{
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+  display: inline-block;
+  m
+}
+
 .right {
   float: right;
-  width: 765px;
+  width: 756px;
   height: auto;
 }
 
@@ -107,7 +138,7 @@ h4 {
 }
 
 .right-header-container {
-  margin: 10px 32px 10px 9px;
+  margin: 10px 2px 10px 30px;
   position: relative;
   padding-top: 5px;
 }
@@ -115,6 +146,44 @@ h4 {
 .right-header h4 {
   float: left;
   padding-right: 5px;
+}
+
+.right-nav {
+  float: right;
+  font-size: 14px;
+}
+
+.register {
+  float: left;
+  color: #0192B5;
+  padding: 9px 0;
+  margin-top: 3px;
+}
+
+.sign-in {
+  float: left;
+  border: 1px solid #0192B5;
+  padding: 8px 10px;
+  color: #0192B5;
+  border-radius: 3px;
+  margin: 3px 15px 0 15px;
+}
+
+.sign-in:hover {
+  text-decoration: none;
+  background-color: rgba(1, 146, 181, 0.27);
+}
+
+.cart {
+  display: inline-block;
+  border-left: 1px solid #ececec;
+  padding: 0 0 0 15px;
+  font-size: 10px;
+}
+
+.cart span {
+  display: block;
+  padding: 2px 0;
 }
 
 .keyword-results {
@@ -126,18 +195,19 @@ h4 {
 }
 
 .product-listings {
-  margin-left: 7px;
   height: 2150px;
 }
 
 .right-related {
   height: 125px;
   border: 1px solid green;
+  margin-left: 28px;
 }
 
 .more-shops {
   height: 40px;
   border: 1px solid green;
+  margin-left: 28px;
 }
 
 .more-pages {
@@ -150,6 +220,7 @@ h4 {
   margin: 0 auto;
   height: 200px;
   clear: both;
+  border: 1px solid red;
 }
 
 .footer {
@@ -160,6 +231,7 @@ h4 {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  border: 1px solid red;
 }
 
 .footer-container h4 {
@@ -172,6 +244,7 @@ h4 {
   margin: 0 0 0 23px;
   height: 180px;
   float: left;
+  border: 1px solid red;
 }
 
 
@@ -190,7 +263,7 @@ h4 {
   color: #666;
   border: 1px solid #ececec;
   border-radius: 2px;
-  margin: 0 28px 18px 0;
+  margin: 0 0px 18px 28px;
   background-color: #fff;
   font-size: 12px;
 }
@@ -226,15 +299,6 @@ h4 {
   margin: 0 auto 0 auto;
 }
 
-.product-info a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.product-info a:hover {
-  text-decoration: underline;
-  text-decoration-color: #666;
-}
 
 .product-title {
   white-space: nowrap;
@@ -259,4 +323,47 @@ h4 {
 }
 
 /* END PRODUCT LISTING TEMPLATE*/
+
+/* SWATCHES */
+
+.swatch {
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+}
+
+
+.red {
+  background-color: #f40b32;
+}
+
+.orange {
+  background-color: #ff7f00;
+}
+
+.yellow {
+  background-color: #f3cc0c;
+}
+
+.green {
+  background-color: #0ac20a;
+}
+
+.blue {
+  background-color: #0cccf3;
+}
+
+.purple {
+  background-color: #a60cf3;
+}
+
+.black {
+  background-color: #000;
+}
+
+.white {
+  background-color: #fff;
+}
 

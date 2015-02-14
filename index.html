@@ -3,6 +3,7 @@
   <head>
     <title>Etsy Iron Yard Clone | Search</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="shortcut icon" href="https://www.etsy.com/images/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
@@ -22,17 +23,63 @@
           </form>
         </div>
         <div class="browse"></div>
-        <div class="right-nav"></div>
+        <div class="right-nav">
+          <div class="register"><a href="#">Register</a></div>
+          <a href="#" class="sign-in">Sign In</a>
+          <div class="cart">
+            <span><i class="fa fa-shopping-cart fa-2x"></i></span>
+            <span>Cart</span>
+          </div>
+        </div>
       </div>
     </div>
     <div class="content">
       <div class="filters">
         <div class="filter-header"><h4>Show results for:</h4></div>
         <div class="filter-wrapper">
-          <div class="filter-item-type filter-box"><h4>Item Type</h4></div>
+          <div class="filter-item-type filter-box">
+            <h4>Item Type</h4>
+            <ul>
+              <li>All Items</li>
+              <li>Handmade</li>
+              <li>Vintage</li>
+              <li>Craft Supplies</li>
+            </ul>
+              <li>Handmade</li>
+              <li>Glass</li>
+              <li>Weddings</li>              
+              <li>Housewares</li>
+              <li>Accessories</li>
+              <li>Art</li>
+              <li>Jewelry</li>
+              <li>Ceramics and Pottery</li>
+              <li>Clothing</li>
+              <li>Vintage</li>
+              <li>Collectibles</li>
+              <li>Serving</li>
+              <li>Housewares</li>
+              <li>Antique</li>
+              <li>Craft Supplies</li>
+              <li>Bead</li>
+              <li>Commercial</li>
+              <li>Scrapbooking</li>
+              <li>Fabric</li>
+
+          </div>
           <div class="filter-categories filter-box"><h4>Categories</h4></div>
           <div class="filter-price filter-box"><h4>Price Filter</h4></div>
-          <div class="filter-color filter-box"><h4>Filter by Color</h4></div>
+          <div class="filter-color filter-box">
+            <h4>Filter by Color</h4>
+            <ul>
+              <li><a href="#"><div class="swatch red"></div></a></li>
+              <li><a href="#"><div class="swatch orange"></div></a></li>
+              <li><a href="#"><div class="swatch yellow"></div></a></li>
+              <li><a href="#"><div class="swatch green"></div></a></li>
+              <li><a href="#"><div class="swatch blue"></div></a></li>
+              <li><a href="#"><div class="swatch purple"></div></a></li>
+              <li><a href="#"><div class="swatch black"></div></a></li>
+              <li><a href="#"><div class="swatch white"></div></a></li>
+          </div>
           <div class="filter-order-options filter-box"><h4>Order Options</h4></div>
           <div class="filter-shop-location filter-box"><h4>Shop Location</h4></div>
           <div class="filter-ships-to filter-box"><h4>Ships To</h4></div>
@@ -47,7 +94,7 @@
           </div>
         </div>
         <div class="product-listings"></div>
-        <div class="right-related">RELATED SEARCHES HERE</div>
+        <div class="right-related">Related to <span class="keyword"></span></div>
         <div class="more-shops">MORE SHOPS HERE</div>
         <div class="more-pages">MORE PAGE STUFF HERE</div>
       </div>
