@@ -103,6 +103,23 @@ textarea, input {
   height: auto;
 }
 
+.filters ul {
+  padding: 0;
+  margin: 5px 0 0 0;
+  color: #0192B5;
+}
+
+.filters li  {
+  margin-left: 10px;
+  list-style-type: none;
+  padding: 3px 0;
+}
+
+.filters li:first-child {
+  margin-left: 0px;
+  font-weight: bold;
+}
+
 .filter-header {
   height: 40px;
 }
@@ -118,6 +135,15 @@ textarea, input {
   padding: 10px;
 }
 
+.filter-item-type li{
+  margin: 0px;
+}
+
+.filter-item-type span {
+  padding-left: 10px;
+}
+
+
 .filter-box {
   border-bottom: 1px solid #ececec;
   padding: 10px 0;
@@ -131,12 +157,16 @@ textarea, input {
   border-bottom: none;
 }
 
-.filter-color ul, li{
+.filter-color li{
   list-style-type: none;
   margin: 5px 0;
   padding: 0;
   display: inline-block;
-  m
+}
+
+.filter-color ul {
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .right {
@@ -237,7 +267,18 @@ textarea, input {
   margin: 0 auto;
   height: 200px;
   clear: both;
-  border: 1px solid red;
+  border-bottom: 1px solid #cbccc9;
+}
+
+.footer-top ul {
+  padding: 0;
+  margin: 0;
+}
+.footer-top li  {
+  margin-left: 0px;
+  list-style-type: none;
+  padding: 5px 0;
+  color: #0192B5;
 }
 
 .footer {
@@ -248,7 +289,6 @@ textarea, input {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px solid red;
 }
 
 .footer-container h4 {
@@ -261,9 +301,11 @@ textarea, input {
   margin: 0 0 0 23px;
   height: 180px;
   float: left;
-  border: 1px solid red;
 }
 
+.col5 span {
+  padding-right: 5px;
+}
 
 
 /* END PAGE LAYOUT*/

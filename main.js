@@ -49,19 +49,19 @@ var handleEtsyData = function(data) {
   insertProductListingTemplate(data.results);
 };
 
-$(function() {
-  $(".search-form").on("submit", function(event) {  
-    event.preventDefault();
-    var keywords = $(".search-field").val();
-    $(".product-listings").empty();
-    getData(keywords, handleEtsyData); 
-    $(".keyword-results").html("<h4>&ldquo;" + keywords + "&rdquo;</h4>" + " We found " + " items!");
+// $(function() {
+//   $(".search-form").on("submit", function(event) {  
+//     event.preventDefault();
+//     var keywords = $(".search-field").val();
+//     $(".product-listings").empty();
+//     getData(keywords, handleEtsyData); 
+//     $(".keyword-results").html("<h4>&ldquo;" + keywords + "&rdquo;</h4>" + " We found " + " items!");
     
-  });
+//   });
 
-  getData(handleEtsyData);
+//   getData(handleEtsyData);
 
-});
+// });
 
 
 
