@@ -195,6 +195,18 @@ textarea, input {
   font-size: 14px;
 }
 
+.right-related ul {
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+  padding: 0;
+}
+
+.right-related li {
+  list-style-type: none;
+  color: #0192B5;
+  padding: 5px 10px 5px 0;
+}
+
 .register {
   float: left;
   color: #0192B5;
@@ -246,20 +258,24 @@ textarea, input {
 }
 
 .right-related {
-  height: 125px;
-  border: 1px solid green;
+  height: 120px;
   margin-left: 28px;
 }
 
 .more-shops {
   height: 40px;
-  border: 1px solid green;
   margin-left: 28px;
+}
+
+.more-shops a {
+  color: #0192B5;
 }
 
 .more-pages {
   height: 150px;
-  border: 1px solid green;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footer-top {
@@ -404,6 +420,21 @@ textarea, input {
   color: #999;
 }
 
+.page-numbers {
+  margin: 0 90px;
+  color: #0192B5
+}
+
+.page-numbers a {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.page-numbers h4 {
+  font-size: 30px;
+  margin: 15px;
+}
 
 /* END PAGE LAYOUT*/
 
