@@ -74,7 +74,13 @@
               <li>Fabric</li>
             </ul>
           </div>
-          <div class="filter-price filter-box"><h4>Price Filter</h4></div>
+          <div class="filter-price filter-box">
+            <h4>Price Filter</h4>
+            <input class="price-field" type="tel" step="any" name="min" value="" placeholder="$ min" id="min">
+            <span>to</span>
+            <input class="price-field" type="tel" step="any" name="max" value="" placeholder="$ max" id="max">
+            <span class="price-submit"><i class="fa fa-caret-right fa-2x"></i></span>
+          </div>
           <div class="filter-color filter-box">
             <h4>Filter by Color</h4>
             <ul>
@@ -87,9 +93,25 @@
               <li><a href="#"><div class="swatch black"></div></a></li>
               <li><a href="#"><div class="swatch white"></div></a></li>
           </div>
-          <div class="filter-order-options filter-box"><h4>Order Options</h4></div>
-          <div class="filter-shop-location filter-box"><h4>Shop Location</h4></div>
-          <div class="filter-ships-to filter-box"><h4>Ships To</h4></div>
+          <div class="filter-order-options filter-box">
+            <h4>Order Options</h4>
+            <ul>
+              <li><input type="checkbox" name="marketplace" value=""><span>Accepts Etsy Gift Cards</span></li>
+              <li><input type="checkbox" name="marketplace" value=""><span>Customizable</span></li>
+            </ul> 
+          </div>
+          <div class="filter-shop-location filter-box">
+            <h4>Shop Location</h4>
+            <ul>
+              <li><input type="radio" name="marketplace" value=""><span>Anywhere</span></li>
+              <li><input type="radio" name="marketplace" value=""><span>United States</span></li>
+              <li><a href="#">Choose a custom location</a></li>
+            </ul>  
+          </div>
+          <div class="filter-ships-to filter-box">
+            <h4>Ships To</h4>
+            <a href=""><div class="ships">United States<span class="triangle"></span></div></a>
+            </div>
         </div>
       </div>
       <div class="right">

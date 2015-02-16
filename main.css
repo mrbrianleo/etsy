@@ -147,6 +147,7 @@ textarea, input {
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
+  height: auto;
 }
 
 .filter-item-type li{
@@ -157,10 +158,38 @@ textarea, input {
   padding-left: 10px;
 }
 
+.filter-item-type li:first-child{
+  font-weight: normal;
+}
+
+.filter-order-options li{
+  margin: 0px;
+}
+
+.filter-order-options span {
+  padding-left: 10px;
+}
+
+.filter-order-options li:first-child{
+  font-weight: normal;
+}
+
+.filter-shop-location li{
+  margin: 0px;
+}
+
+.filter-shop-location span {
+  padding-left: 10px;
+}
+
+.filter-shop-location  li:first-child{
+  font-weight: normal;
+}
 
 .filter-box {
   border-bottom: 1px solid #ececec;
   padding: 10px 0;
+  height: auto;
 }
 
 .filter-box:first-child {
@@ -181,6 +210,46 @@ textarea, input {
 .filter-color ul {
   margin-left: 0;
   padding-left: 0;
+}
+
+.price-field {
+  line-height: 32px;
+  padding: 0 10px;
+  width: 40px;
+  border-radius: 3px;
+  border: 1px solid #aeaeae;
+  -webkit-appearance: none;
+}
+
+.price-submit {
+  line-height: 32px;
+  padding: 8px 15px;
+  width: 30px;
+  border-radius: 3px;
+  border: 1px solid #aeaeae;
+  -webkit-appearance: none;
+  background-color: #e2e2e2;
+}
+
+.ships {
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+  color: #666;
+  border-radius: 3px;
+  margin: 10px 8px 0 0;
+}
+
+.ships:hover {
+  text-decoration: none;
+  border-color: #aeaeae;
+}
+
+.ships span {
+  margin-left: 80px
+}
+
+.filter-ships-to {
+  padding-bottom: 5px;
 }
 
 .right {
@@ -318,7 +387,7 @@ textarea, input {
 }
 
 .footer-container {
-  width: 100%;
+  width: 1016px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -329,7 +398,7 @@ textarea, input {
 }
 
 .footer-col {
-  width: 17%;
+  width: 170px;
   margin: 0 0 0 23px;
   height: 180px;
   float: left;
