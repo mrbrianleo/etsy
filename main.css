@@ -558,9 +558,6 @@ textarea, input {
 }
 
 .product-image img {
-  /*position: absolute;
-  width: 214px;
-  top: -25px;*/
   display: block;
   max-width:214px;
   max-height: 170px;
@@ -635,5 +632,7 @@ textarea, input {
 
 .white {
   background-color: #fff;
-}
+} 
+
+/* END SWATCHES */
 
